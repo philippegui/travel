@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Travel Itinerary: San Francisco ✈️ Toulouse</title>
+    <title>My Travel Itinerary: San Francisco to Toulouse</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -19,96 +19,113 @@
 <body class="antialiased text-gray-800">
     <div class="min-h-screen flex items-center justify-center p-1 sm:p-3 lg:p-5">
         <div class="bg-white shadow-xl rounded-2xl p-3 sm:p-5 lg:p-7 max-w-4xl w-full border border-gray-200">
-            <!-- Main Title -->
+            <!-- Main Title - Now just cities -->
             <h1 class="text-2xl sm:text-3xl font-extrabold text-center text-indigo-700 mb-2 sm:mb-3">
-                My Travel Itinerary
+                San Francisco to Toulouse
             </h1>
-            <!-- Overall Trip Summary -->
+            <!-- Overall Trip Summary - Now just dates -->
             <p class="text-base sm:text-lg text-center text-gray-600 mb-4 font-medium">
-                San Francisco <span class="mx-1.5 text-indigo-500">✈️</span> Toulouse
-                <span class="block text-sm sm:text-base text-gray-500 mt-0.5">(Aug 9 – Aug 30, 2025)</span>
+                Aug 9 – Aug 30, 2025
             </p>
 
             <!-- Outbound Journey Section -->
             <div class="mb-6">
                 <h2 class="text-xl font-bold text-indigo-600 mb-3 flex items-center">
-                    <span class="mr-2 text-2xl">🛫</span> Outbound Journey
+                    Outbound Journey
                 </h2>
 
                 <!-- Flight Card: SFO -> YUL -->
                 <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
-                    <h3 class="text-lg font-semibold text-indigo-800 mb-3 text-center">
-                        San Francisco (SFO) <span class="mx-1.5 text-indigo-500">→</span> Montréal (YUL)
-                    </h3>
-                    <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-sm mb-2">
-                        <!-- Departure Info -->
-                        <div class="text-center md:text-left mb-1 md:mb-0">
-                            <p class="font-bold text-gray-900 text-base leading-tight">11:47 PM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sat, Aug 9 <span class="inline-block md:hidden">- Terminal 3</span></p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">Terminal 3</p>
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/UA.png?raw=true" alt="United Airlines Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=UA';">
+                                AC3106 <span class="text-sm text-gray-600 font-normal ml-1">United Airlines</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 5h 29m
+                            </p>
                         </div>
 
-                        <!-- Arrow/Separator -->
-                        <div class="hidden md:block text-indigo-500 text-xl mx-4">→</div>
-                        <div class="block md:hidden text-indigo-500 text-xl my-0.5">↓</div>
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>San Francisco <span class="text-sm font-normal">SFO</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">11:47 PM <span class="font-normal text-black ml-1 text-base">Sat, Aug 9</span></p>
+                                </div>
 
-                        <!-- Arrival Info -->
-                        <div class="text-center md:text-right">
-                            <p class="font-bold text-gray-900 text-base leading-tight">8:16 AM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sun, Aug 10</p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">&nbsp;</p> <!-- Placeholder for alignment -->
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">8:16 AM <span class="font-normal text-black ml-1 text-base">Sun, Aug 10</span></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-t border-indigo-200 pt-2 mt-2 text-gray-700">
-                        <p class="flex items-center text-xs mb-0.5">
-                            <strong class="font-medium text-indigo-700 mr-2">Flight:</strong>
-                            <img src="https://github.com/philippegui/travel/blob/main/UA.png?raw=true" alt="United Airlines Logo" class="w-4 h-4 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/16x16/CCCCCC/000000?text=UA';">
-                            AC3106 (United Airlines)
-                        </p>
-                        <p class="text-xs text-gray-600 italic">
-                            <strong class="font-medium text-indigo-700 mr-2">Duration:</strong> 5h 29m
-                        </p>
                     </div>
                 </div>
 
                 <!-- Transit Time: YUL (Outbound) -->
-                <div class="bg-blue-100 p-2.5 rounded-xl shadow-inner mb-4 text-center text-blue-800 text-sm font-medium border border-blue-200">
-                    <span class="mr-2">⏳</span> Transit in Montréal (YUL): <span class="font-bold">11h 14m</span>
+                <div class="mb-4 text-center text-blue-800 text-sm font-medium">
+                    Transit in Montréal (YUL): <span class="font-bold">11h 14m</span>
                 </div>
 
                 <!-- Flight Card: YUL -> TLS -->
                 <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
-                    <h3 class="text-lg font-semibold text-indigo-800 mb-3 text-center">
-                        Montréal (YUL) <span class="mx-1.5 text-indigo-500">→</span> Toulouse (TLS)
-                    </h3>
-                    <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-sm mb-2">
-                        <!-- Departure Info -->
-                        <div class="text-center md:text-left mb-1 md:mb-0">
-                            <p class="font-bold text-gray-900 text-base leading-tight">7:30 PM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sun, Aug 10</p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">&nbsp;</p>
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=AC';">
+                                AC878 <span class="text-sm text-gray-600 font-normal ml-1">Air Canada</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 6h 55m
+                            </p>
                         </div>
 
-                        <!-- Arrow/Separator -->
-                        <div class="hidden md:block text-indigo-500 text-xl mx-4">→</div>
-                        <div class="block md:hidden text-indigo-500 text-xl my-0.5">↓</div>
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">7:30 PM <span class="font-normal text-black ml-1 text-base">Sun, Aug 10</span></p>
+                                </div>
 
-                        <!-- Arrival Info -->
-                        <div class="text-center md:text-right">
-                            <p class="font-bold text-gray-900 text-base leading-tight">8:25 AM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Mon, Aug 11</p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">&nbsp;</p>
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>Toulouse <span class="text-sm font-normal">TLS</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">8:25 AM <span class="font-normal text-black ml-1 text-base">Mon, Aug 11</span></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-t border-indigo-200 pt-2 mt-2 text-gray-700">
-                        <p class="flex items-center text-xs mb-0.5">
-                            <strong class="font-medium text-indigo-700 mr-2">Flight:</strong>
-                            <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-4 h-4 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/16x16/CCCCCC/000000?text=AC';">
-                            AC878 (Air Canada)
-                        </p>
-                        <p class="text-xs text-gray-600 italic">
-                            <strong class="font-medium text-indigo-700 mr-2">Duration:</strong> 6h 55m
-                        </p>
                     </div>
                 </div>
             </div>
@@ -116,91 +133,350 @@
             <!-- Return Journey Section -->
             <div>
                 <h2 class="text-xl font-bold text-indigo-600 mb-3 flex items-center">
-                    <span class="mr-2 text-2xl">🛬</span> Return Journey
+                    Return Journey
                 </h2>
 
                 <!-- Flight Card: TLS -> YUL -->
                 <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
-                    <h3 class="text-lg font-semibold text-indigo-800 mb-3 text-center">
-                        Toulouse (TLS) <span class="mx-1.5 text-indigo-500">→</span> Montréal (YUL)
-                    </h3>
-                    <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-sm mb-2">
-                        <!-- Departure Info -->
-                        <div class="text-center md:text-left mb-1 md:mb-0">
-                            <p class="font-bold text-gray-900 text-base leading-tight">10:00 AM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sat, Aug 30</p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">&nbsp;</p>
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=AC';">
+                                AC879 <span class="text-sm text-gray-600 font-normal ml-1">Air Canada</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 7h 40m
+                            </p>
                         </div>
 
-                        <!-- Arrow/Separator -->
-                        <div class="hidden md:block text-indigo-500 text-xl mx-4">→</div>
-                        <div class="block md:hidden text-indigo-500 text-xl my-0.5">↓</div>
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>Toulouse <span class="text-sm font-normal">TLS</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">10:00 AM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
 
-                        <!-- Arrival Info -->
-                        <div class="text-center md:text-right">
-                            <p class="font-bold text-gray-900 text-base leading-tight">11:40 AM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sat, Aug 30</p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">&nbsp;</p>
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">11:40 AM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-t border-indigo-200 pt-2 mt-2 text-gray-700">
-                        <p class="flex items-center text-xs mb-0.5">
-                            <strong class="font-medium text-indigo-700 mr-2">Flight:</strong>
-                            <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-4 h-4 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/16x16/CCCCCC/000000?text=AC';">
-                            AC879 (Air Canada)
-                        </p>
-                        <p class="text-xs text-gray-600 italic">
-                            <strong class="font-medium text-indigo-700 mr-2">Duration:</strong> 7h 40m
-                        </p>
                     </div>
                 </div>
 
                 <!-- Transit Time: YUL (Return) -->
-                <div class="bg-blue-100 p-2.5 rounded-xl shadow-inner mb-4 text-center text-blue-800 text-sm font-medium border border-blue-200">
-                    <span class="mr-2">⏳</span> Transit in Montréal (YUL): <span class="font-bold">5h 5m</span>
+                <div class="mb-4 text-center text-blue-800 text-sm font-medium">
+                    Transit in Montréal (YUL): <span class="font-bold">5h 5m</span>
                 </div>
 
                 <!-- Flight Card: YUL -> SFO -->
-                <div class="bg-indigo-50 p-3 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
-                    <h3 class="text-lg font-semibold text-indigo-800 mb-3 text-center">
-                        Montréal (YUL) <span class="mx-1.5 text-indigo-500">→</span> San Francisco (SFO)
-                    </h3>
-                    <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-sm mb-2">
-                        <!-- Departure Info -->
-                        <div class="text-center md:text-left mb-1 md:mb-0">
-                            <p class="font-bold text-gray-900 text-base leading-tight">4:45 PM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sat, Aug 30</p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">&nbsp;</p>
+                <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=AC';">
+                                AC763 <span class="text-sm text-gray-600 font-normal ml-1">Air Canada</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 6h 12m
+                            </p>
                         </div>
 
-                        <!-- Arrow/Separator -->
-                        <div class="hidden md:block text-indigo-500 text-xl mx-4">→</div>
-                        <div class="block md:hidden text-indigo-500 text-xl my-0.5">↓</div>
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">4:45 PM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
 
-                        <!-- Arrival Info -->
-                        <div class="text-center md:text-right">
-                            <p class="font-bold text-gray-900 text-base leading-tight">7:57 PM</p>
-                            <p class="text-gray-600 text-xs leading-tight">Sat, Aug 30 <span class="inline-block md:hidden">- Terminal 2</span></p>
-                            <p class="text-gray-500 text-xs leading-tight hidden md:block">Terminal 2</p>
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>San Francisco <span class="text-sm font-normal">SFO</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">7:57 PM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="border-t border-indigo-200 pt-2 mt-2 text-gray-700">
-                        <p class="flex items-center text-xs mb-0.5">
-                            <strong class="font-medium text-indigo-700 mr-2">Flight:</strong>
-                            <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-4 h-4 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/16x16/CCCCCC/000000?text=AC';">
-                            AC763 (Air Canada)
-                        </p>
-                        <p class="text-xs text-gray-600 italic">
-                            <strong class="font-medium text-indigo-700 mr-2">Duration:</strong> 6h 12m
-                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+I've removed the hourglass emoji `⏳` from the transit time information in the `travel-itinerary-webpage`.
+
+The line:
+`<div class="mb-4 text-center text-blue-800 text-sm font-medium"> <span class="mr-2">⏳</span> Transit in Montréal (YUL): <span class="font-bold">11h 14m</span> </div>`
+is now:
+`<div class="mb-4 text-center text-blue-800 text-sm font-medium"> Transit in Montréal (YUL): <span class="font-bold">11h 14m</span> </div>`
+
+This makes the transit time information purely text-based as you requested.```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Itinerary: San Francisco to Toulouse</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for Inter font and general body background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <div class="min-h-screen flex items-center justify-center p-1 sm:p-3 lg:p-5">
+        <div class="bg-white shadow-xl rounded-2xl p-3 sm:p-5 lg:p-7 max-w-4xl w-full border border-gray-200">
+            <!-- Main Title - Now just cities -->
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-center text-indigo-700 mb-2 sm:mb-3">
+                San Francisco to Toulouse
+            </h1>
+            <!-- Overall Trip Summary - Now just dates -->
+            <p class="text-base sm:text-lg text-center text-gray-600 mb-4 font-medium">
+                Aug 9 – Aug 30, 2025
+            </p>
+
+            <!-- Outbound Journey Section -->
+            <div class="mb-6">
+                <h2 class="text-xl font-bold text-indigo-600 mb-3 flex items-center">
+                    Outbound Journey
+                </h2>
+
+                <!-- Flight Card: SFO -> YUL -->
+                <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/UA.png?raw=true" alt="United Airlines Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=UA';">
+                                AC3106 <span class="text-sm text-gray-600 font-normal ml-1">United Airlines</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 5h 29m
+                            </p>
+                        </div>
+
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>San Francisco <span class="text-sm font-normal">SFO</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">11:47 PM <span class="font-normal text-black ml-1 text-base">Sat, Aug 9</span></p>
+                                </div>
+
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">8:16 AM <span class="font-normal text-black ml-1 text-base">Sun, Aug 10</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transit Time: YUL (Outbound) -->
+                <div class="mb-4 text-center text-blue-800 text-sm font-medium">
+                    Transit in Montréal (YUL): <span class="font-bold">11h 14m</span>
+                </div>
+
+                <!-- Flight Card: YUL -> TLS -->
+                <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=AC';">
+                                AC878 <span class="text-sm text-gray-600 font-normal ml-1">Air Canada</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 6h 55m
+                            </p>
+                        </div>
+
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">7:30 PM <span class="font-normal text-black ml-1 text-base">Sun, Aug 10</span></p>
+                                </div>
+
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>Toulouse <span class="text-sm font-normal">TLS</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">8:25 AM <span class="font-normal text-black ml-1 text-base">Mon, Aug 11</span></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Closing Message -->
-            <p class="text-center text-lg font-semibold text-green-700 mt-6 p-2.5 bg-green-50 rounded-lg border border-green-200 shadow-sm">
-                Wishing you a fantastic trip! ✨
-            </p>
+            <!-- Return Journey Section -->
+            <div>
+                <h2 class="text-xl font-bold text-indigo-600 mb-3 flex items-center">
+                    Return Journey
+                </h2>
+
+                <!-- Flight Card: TLS -> YUL -->
+                <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=AC';">
+                                AC879 <span class="text-sm text-gray-600 font-normal ml-1">Air Canada</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 7h 40m
+                            </p>
+                        </div>
+
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>Toulouse <span class="text-sm font-normal">TLS</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">10:00 AM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
+
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">11:40 AM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transit Time: YUL (Return) -->
+                <div class="mb-4 text-center text-blue-800 text-sm font-medium">
+                    Transit in Montréal (YUL): <span class="font-bold">5h 5m</span>
+                </div>
+
+                <!-- Flight Card: YUL -> SFO -->
+                <div class="bg-indigo-50 p-3 rounded-xl shadow-md mb-4 hover:shadow-lg transition-shadow duration-300 border border-indigo-100">
+                    <div class="flex flex-col md:flex-row md:items-start">
+                        <!-- Column 1: Flight Header & Travel Time -->
+                        <div class="md:w-1/3 flex-shrink-0 mb-3 md:mb-0 md:pr-4">
+                            <h3 class="text-lg font-semibold text-indigo-800 flex items-center justify-start">
+                                <img src="https://github.com/philippegui/travel/blob/main/AC.png?raw=true" alt="Air Canada Logo" class="w-5 h-5 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/20x20/CCCCCC/000000?text=AC';">
+                                AC763 <span class="text-sm text-gray-600 font-normal ml-1">Air Canada</span>
+                            </h3>
+                            <p class="text-xs text-gray-600 mt-1 ml-7">
+                                <strong class="font-medium text-indigo-700 mr-1">Travel time:</strong> 6h 12m
+                            </p>
+                        </div>
+
+                        <!-- Column 2: Departure and Arrival Info -->
+                        <div class="md:w-2/3 flex-grow">
+                            <div class="flex flex-col md:flex-row md:items-start text-sm">
+                                <!-- Departure Info -->
+                                <div class="flex-1 text-left mb-1 md:mb-0 pr-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/departure.png?raw=true" alt="Departure Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=D';">
+                                        <span>Montréal <span class="text-sm font-normal">YUL</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">4:45 PM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
+
+                                <!-- Separator for Desktop and Mobile (empty space) -->
+                                <div class="flex-shrink-0 flex items-center justify-center md:flex-col mx-2 md:mx-4">
+                                    <span class="text-indigo-500 text-xl hidden md:block">&nbsp;</span>
+                                    <span class="text-indigo-500 text-xl block md:hidden">&nbsp;</span>
+                                </div>
+
+                                <!-- Arrival Info -->
+                                <div class="flex-1 text-left pl-2">
+                                    <p class="text-black text-lg leading-tight font-bold mb-0.5 flex items-center">
+                                        <img src="https://github.com/philippegui/travel/blob/main/arrival.png?raw=true" alt="Arrival Icon" class="flex-shrink-0 w-4 h-4 mr-1" onerror="this.onerror=null;this.src='https://placehold.co/16x16/000000/FFFFFF?text=A';">
+                                        <span>San Francisco <span class="text-sm font-normal">SFO</span></span>
+                                    </p>
+                                    <p class="text-black text-2xl leading-tight pl-5">7:57 PM <span class="font-normal text-black ml-1 text-base">Sat, Aug 30</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
